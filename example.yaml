@@ -1,0 +1,13 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: sample
+  # This namespace is special and auto-wired to deploy to the local cluster
+  namespace: fleet-local
+spec:
+  branch: main
+  clientSecretName: auth-gv5x9
+  insecureSkipTLSVerify: false
+  paths:
+    - zalando
+  repo: "https://gitlab.com/Jpignet/fleet.git"
