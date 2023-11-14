@@ -6,7 +6,7 @@ metadata:
   namespace: fleet-local
 spec:
   branch: main
-  clientSecretName: auth-gv5x9
+  clientSecretName: basic-auth-secret
   insecureSkipTLSVerify: false
   paths:
     - zalando
